@@ -3,176 +3,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grupo Caparaó Café</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+    <title>Grupo Caparaó de Café</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <!-- <img src="" alt="" class="logo"> -->
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Quem somos</a></li>
-                <li><a href="#">Nossos Cafés</a></li>
-                <li><a href="#">Notícias</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-            <ul class="language-links">
-                <li><a href="#"><img class="language-flag" src="./assets/brazil-flag.png" alt="pt-br" title="Traduzir para pt-br"></a></li>
-                <li><a href="#"><img class="language-flag" src="./assets/britain-flag.png" alt="en" title="Translate do english"></a></li>
-            </ul>
-        </div>
-    </nav>
-
     <header>
-        <video width="100%" muted autoplay loop>
-            <source src="./assets/header-bg.mp4" type="video/mp4">
-        </video>
-        <div class="video-overlay"></div>
-        <div class="container">
-            <div class="header-caption">
-                <h1><span class="highlight">Aroma</span> e <span class="highlight">qualidade</span> <br/>que estão conquistando <br/>o <span class="highlight">mundo inteiro</span></h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur nesciunt culpa quam qui fugiat. Beatae suscipit blanditiis distinctio accusantium praesentium maiores dolor recusandae aliquam sunt, laudantium aut libero neque fuga!</p>
-                <a href="#" class="link link-primary">Saiba mais</a>
-                <a href="#" class="link link-secondary ml-1">Fale conosco</a>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-50 py-4">
+            <div class="container">
+                <a class="navbar-brand" href="#">Caparaó Café</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Quem somos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Nossos cafés</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Notícias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="#" class="nav-link" title="Taduzir para Português/Br"><img src="./assets/brazil-flag-24.png" alt=""></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link" title="Translate to English"><img src="./assets/britain-flag-24.png" alt=""></a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
+        </nav>
+
+        <section id="hero" class="vh-100 d-flex align-items-center position-relative">
+            <video id="video-hero" width="100%" poster="./assets/coffee-bg.jpg" muted autoplay loop>
+                <source src="./assets/hero-video.mp4" type="video/mp4">
+            </video>
+            <div id="video-hero-overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col col-md-6 text-light">
+                        <h2 class="mb-4"><span style="color: orange;">Aroma</span> e <span style="color: orange;">qualidade</span><br/>
+                            que estão conquistando<br/>
+                            o <span style="color: orange;">mundo inteiro</span></h2>
+                        <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut dicta cupiditate fugit vitae culpa. Dolore aliquam dicta magnam similique, dignissimos, iste odio quo nobis, nostrum esse porro voluptas rerum assumenda.</p>
+                        <a class="hero-link-primary" href="#">Saiba mais</a>
+                        <a class="hero-link-secondary" href="#">Fale conosco</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
 
-    <section id="quality">
-        <div class="container">
-            <div class="image">
-                <img src="./assets/upload-quality.png" alt="">
-            </div>
-            <div class="content">
-                <h2>Nosso verdadeiro <br/>produto é a <span class="highlight">qualidade</span>.</h2>
-                <p>Muito mais que a produção, comercialização e exportação de café, o Grupo Caparaó busca oferecer um novo padrão de qualidade aos seus clientes e consumidores.</p>
-                <p>Com ampla experiência no mercado nacional e internacional, corpo técnico qualificado e uma estrutura robusta de produção e distribuição, o Grupo Caparaó está apto em atender às demandas mais exigentes em questão de qualidade e preço, seja para o mercado nacional quanto para outros países.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="us">
-        
-        <div class="container cards">
-            <div class="card">
-                <img src="./assets/upload-001.jpg" alt="" class="card-img">
-                <div class="card-body">
-                    <h3>Qualidade dos grãos garantida</h3>
-                    <p>O controle da qualidade desde a produção, passando pela seleção, armazenamento e transporte garantem um nível elevado na qualidade dos grãos.</p>
-                    <a href="#" class="card-link">Saiba mais</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://picsum.photos/id/331/200/300" alt="" class="card-img">
-                <div class="card-body">
-                    <h3>Armazenamento bem dimensionado</h3>
-                    <p>Armazéns bem localizados, dimensionados adequadamente e otimizados para estocagem de grande disponibilidade.</p>
-                    <a href="#" class="card-link">Saiba mais</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://picsum.photos/id/1026/200/300" alt="" class="card-img">
-                <div class="card-body">
-                    <h3>Logística estruturada e eficiente</h3>
-                    <p>Somente com uma logística estruturada pode garantir a manutenção otimizada dos custos e garantir a entrega pontual.</p>
-                    <a href="#" class="card-link">Saiba mais</a>
+    <section id="us" class="d-flex align-items-center">
+        <div class="container py-5">
+            <div class="row d-flex justify-content-end">
+                <div class="col col-md-6 text-right text-light">
+                    <h2>Nosso verdadeiro <br/>produto é a <span style="color: orange;">qualidade</span>.</h2>
+                    <p>Muito mais que a produção, comercialização e exportação de café. Com ampla experiência no marcado nacional e internacional, o <span style="color: orange;">Grupo Caparaó de Café</span> está apto em atender às mais exigentes demandas do mercado e busca oferecer um novo padrão de qualidade aos seus clientes e consumidores.</p>
+                    <a class="section-link" href="#">Saiba mais &raquo;</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="certificates">
-        <div class="container">
-            <div class="text">
-                <h2>Compromisso com <br/>a <span class="highlight">sustentabilidade</span>.</h2>
-                <p>A busca permanente por novas soluções sustentáveis na produção e adequações perpétuas em suas políticas já existentes são refletidas através dos certificados de sustentabilidade obtidos pelo Grupo Caparaó.</p>
+    <section id="cards">
+        <div class="container py-5">
+            <div class="row d-flex">
+                <div class="col-12 col-md-4 d-flex mb-5 mb-md-0">
+                    <div class="custom-card">
+                        <img src="./assets/upload-004.jpg" alt="" class="custom-card-img">
+                        <div class="custom-card-body">
+                            <h3>Qualidade dos grãos garantida</h3>
+                            <p>O controle da qualidade desde a produção, passando pela seleção, armazenamento e transporte garantem um nível elevado na qualidade dos grãos.</p>
+                            <a href="#">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 d-flex mb-5 mb-md-0">
+                    <div class="custom-card">
+                        <img src="./assets/upload-002.jpeg" alt="" class="custom-card-img">
+                        <div class="custom-card-body">
+                            <h3>Armazenamento bem dimensionado</h3>
+                            <p>Armazéns bem localizados, dimensionados adequadamente e otimizados para estocagem de grande disponibilidade.</p>
+                            <a href="#">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 d-flex">
+                    <div class="custom-card">
+                        <img src="./assets/upload-005.jpg" alt="" class="custom-card-img">
+                        <div class="custom-card-body">
+                            <h3>Logística estruturada e eficiente</h3>
+                            <p>Somente com uma logística estruturada pode garantir a manutenção otimizada dos custos e garantir a entrega pontual.</p>
+                            <a href="#">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="cert-list">
-                <div class="item"><img src="./assets/selo-rainforest.png" alt=""></div>
-                <div class="item"><img src="./assets/selo-abic.png" alt=""></div>
-                <div class="item"><img src="./assets/selo-utz.png" alt=""></div>
-                <div class="item"><img src="./assets/selo-starbucks.png" alt=""></div>
-                <div class="item"><img src="./assets/selo-certifica-minas.png" alt=""></div>
+        </div>
+    </section>
+
+    <section id="sustainable" class="d-flex align-items-center">
+        <div class="container py-5">
+            <div class="row d-flex align-items-center">
+                <div class="col-12 col-md-6 text-white mb-5 mb-md-0">
+                    <h2>Compromisso com <br/>a <span style="color: orange;">sustentabilidade</span>.</h2>
+                    <p>A busca permanente por novas soluções sustentáveis na produção e adequações perpétuas em suas políticas já existentes são refletidas através dos certificados de sustentabilidade obtidos pelo Grupo Caparaó.</p>
+                    <a class="section-link" href="#">Saiba mais &raquo;</a>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-4">
+                            <img src="./assets/selo-starbucks.png" alt="" class="certificates-img">
+                        </div>
+                        <div class="col-4">
+                            <img src="./assets/selo-rainforest.png" alt="" class="certificates-img">
+                        </div>
+                        <div class="col-4">
+                            <img src="./assets/selo-abic.png" alt="" class="certificates-img">
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-4"><img src="./assets/selo-utz.png" alt="" class="certificates-img"></div>
+                        <div class="col-4"><img src="./assets/selo-certifica-minas.png" alt="" class="certificates-img"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="news">
-        <div class="container">
-            <div class="articles">
-                <img src="./assets/upload-003.jpeg" alt="">
-                <div class="article-body">
-                    <h4>Sul do estado prevê safra recorde este ano</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, quidem.</p>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-6 col-md-3 mb-4 mb-md-0">
+                    <div class="custom-news">
+                        <img src="./assets/upload-001.jpg" alt="" class="custom-news-img">
+                        <div class="custom-news-body">
+                            <small>Artigo</small>
+                            <h4>Sul do estado prevê safra recorde este ano</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, quidem.</p>
+                        </div>
+                        <a href="#"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="articles">
-                <img src="./assets/upload-002.jpeg" alt="">
-                <div class="article-body">
-                    <h4>Novas práticas garantem maior produtividade</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, quidem.</p>
+                <div class="col-6 col-md-3 mb-4 mb-md-0">
+                    <div class="custom-news">
+                        <img src="./assets/upload-003.jpeg" alt="" class="custom-news-img">
+                        <div class="custom-news-body">
+                            <small>Dicas</small>
+                            <h4>Novas práticas garantem maior produtividade</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, quidem.</p>
+                        </div>
+                        <a href="#"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="articles">
-                <img src="./assets/upload-001.jpg" alt="">
-                <div class="article-body">
-                    <h4>Selo de qualidade ficará mais exigente no próximo ano</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, quidem.</p>
+                <div class="col-6 col-md-3 mb-4 mb-md-0">
+                    <div class="custom-news">
+                        <img src="./assets/upload-004.jpg" alt="" class="custom-news-img">
+                        <div class="custom-news-body">
+                            <small>Mercado</small>
+                            <h4>Selo de qualidade ficará mais exigente no próximo ano</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, quidem.</p>
+                        </div>
+                        <a href="#"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="articles">
-                <img src="./assets/upload-004.jpg" alt="">
-                <div class="article-body">
-                    <h4>Agricultura familiar se destaca na qualidade de orgânicos</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, quidem.</p>
+                <div class="col-6 col-md-3 mb-4 mb-md-0">
+                    <div class="custom-news">
+                        <img src="./assets/upload-002.jpeg" alt="" class="custom-news-img">
+                        <div class="custom-news-body">
+                            <small>Artigo</small>
+                            <h4>Agricultura familiar se destaca na qualidade de orgânicos</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, quidem.</p>
+                        </div>
+                        <a href="#"></a>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="bottom">
-        <div class="content">
-            <div class="column">
-                <li class="list-item"><a href="#">Clientes</a></li>
-                <li class="list-item"><a href="#">Produtores</a></li>
-                <li class="list-item"><a href="#">Certificações</a></li>
-                <li class="list-item"><a href="#">Código de conduta</a></li>
-                <li class="list-item"><a href="#">Sustentabilidade</a></li>
-                <li class="list-item"><a href="#">Perguntas frenquentes</a></li>
-            </div>
-            <div class="column">
-                <li class="list-item mb-2">
-                    <h4>Vitória/ES</h4>
-                    <p class="mb-1">Lorem ipsum dolor sit<br/>
-                    Lorem ipsum dolor sit amet</p>
-                    <a href="#" class="d-block bold mb-1 font-roboto">+55 27 5555-8525</a>
-                    <a class="link-rounded" href="#">ver no mapa</a>
-                </li>
-                <li class="list-item">
-                    <h4>Alfredo Chaves/ES</h4>
-                    <p class="mb-1">Lorem ipsum dolor sit<br/>
-                    Lorem ipsum dolor sit amet</p>
-                    <a href="#" class="d-block bold mb-1 font-roboto">+55 27 5555-8525</a>
-                    <a class="link-rounded" href="#">ver no mapa</a>
-                </li>                
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <ul class="social-icons">
-                <li><a href="#"><img src="./assets/facebook-48.png" alt="" title="Facebook"></a></li>
-                <li><a href="#"><img src="./assets/twitter-48.png" alt="" title="Twitter"></a></li>
-                <li><a href="#"><img src="./assets/instagram-48.png" alt="" title="Instagram"></a></li>
-                <li><a href="#"><img src="./assets/whatsapp-48.png" alt="" title="Whatsapp"></a></li>
-            </ul>
-            Grupo Caparaó de Café &copy; 2020 &bullet; Todos os Direitos Reservados.
-        </div>
+        <section id="largefooter">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-4 mb-md-0">
+                        <ul id="quick-links" class="list-unstyled">
+                            <li><a href="#">Clientes</a></li>
+                            <li><a href="#">Produtores</a></li>
+                            <li><a href="#">Certificações</a></li>
+                            <li><a href="#">Código de conduta</a></li>
+                            <li><a href="#">Sustentabilidade</a></li>
+                            <li><a href="#">Perguntas frenquentes</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 mb-4 mb-md-0">
+                        <ul id="address-links" class="list-unstyled">
+                            <li class="mb-5">
+                                <h4>Vitória/ES</h4>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit<br/>
+                                Vitória/ES - Brasil</p>
+                                <p><a href="#" class="address-phone">+55 27 5555-8598</a></p>
+                                <p><a href="" class="address-map"><i class="fas fa-map-marker-alt mr-2"></i>Ver no mapa</a></p>
+                            </li>
+                            <li>
+                                <h4>Venda Nova/ES</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit<br/>
+                                Venda Nova do Imigrante/ES - Brasil</p>
+                                <p><a href="#" class="address-phone">+55 5555-7789</a></p>
+                                <p><a href="" class="address-map"><i class="fas fa-map-marker-alt mr-2"></i>Ver no mapa</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="smallfooter" class="text-light">
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col mt-4 mb-5">
+                        <ul id="social-icons" class="list-inline d-flex justify-content-center">
+                            <li class="list-inline-item mx-3"><a href="#" title="Facebook"><i class="fab fa-2x fa-facebook"></i></a></li>
+                            <li class="list-inline-item mx-3"><a href="#" title="Instagram"><i class="fab fa-2x fa-instagram"></i></a></li>
+                            <li class="list-inline-item mx-3"><a href="#" title="Twitter"><i class="fab fa-2x fa-twitter"></i></a></li>
+                            <li class="list-inline-item mx-3"><a href="#" title="Whatsapp"><i class="fab fa-2x fa-whatsapp"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center"><span style="color: orange;">Grupo Caparaó de Café</span> &copy; 2020 &bullet; Todos os direitos reservados</div>
+                </div>
+            </div>
+        </section>
     </footer>
 
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./scripts/scripts.js"></script>
 </body>
-</html> 
+</html>

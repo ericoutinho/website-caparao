@@ -1,0 +1,32 @@
+{
+  "name": "website-caparao",
+  "version": "1.0.0",
+  "description": "Website desevolvido para o Grupo Caparaó de Café",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericoutinho/website-caparao.git"
+  },
+  "keywords": [
+    "wordpress",
+    "html",
+    "css",
+    "bootstrap",
+    "javascript"
+  ],
+  "author": "Eric Coutinho <ericoutinho@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ericoutinho/website-caparao/issues"
+  },
+  "homepage": "https://github.com/ericoutinho/website-caparao#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.1",
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
