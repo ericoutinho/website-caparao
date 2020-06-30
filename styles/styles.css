@@ -29,12 +29,20 @@ h1, h2, h3, h4{
     transition: all .5s ease;
 }
 
+/* Classe para navbar sem rolagem da página */
 .navbar.iddle{
     background-color: rgba(0,0,0,0.4);
     padding: 1.5rem 1rem;
     font-size: 1rem;
 }
 
+@media(max-width:991px){
+    .navbar.iddle{
+        background-color: rgba(0,0,0,0.9);
+    }
+}
+
+/* Classe para navbar após rolagem da página */
 .navbar.scrolled{
     /* background-color: rgba(0,0,0,0.8); */
     background-color: var(--color5);
@@ -84,17 +92,61 @@ h1, h2, h3, h4{
 #video-hero-overlay{
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background-image: linear-gradient(to right, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0) 100%);
+    background-image: linear-gradient(to right, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0) 100%);
+    mix-blend-mode: multiply;
 }
 
 section#us{
-    background-image: linear-gradient(to left, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0) 100%), url('../assets/coffee-bg-2.jpg');
+    background-image: url('../assets/coffee-bg-2.jpg'), linear-gradient(to left, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0) 100%);
+    background-blend-mode: multiply;
     background-size:cover;
 }
 
 
+section#caparao{
+    background-image: url('../assets/wooden-bg.jpg'), linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.3), rgba(0,0,0,0.9));
+    background-blend-mode: multiply;
+    background-size: cover;
+    overflow: hidden;
+}
+
+section#caparao h2{
+    /* color: var(--color3); */
+    color: orange;
+    text-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+
+.caparao-img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border: 6px solid var(--color6);
+    /* box-shadow: 0 4px 16px rgba(0,0,0,0.3); */
+}
+
+    /* Animacoes de entrada */
+    .animate{
+        transition: all .5s ease;
+    }
+
+    .from-left{
+        transform: translateX(-50%) rotateZ(-5deg);
+        opacity: 0;
+    }
+
+    .from-right{
+        transform: translateX(50%) rotateZ(5deg);
+        opacity: 0;
+    }
+
+    .reveal{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
 section#cards{
-    background-image: linear-gradient(270deg, rgba(0,0,0,0.9), rgba(0,0,0,0.3)), url('../assets/wooden-bg.jpg');
+    background-image: url('../assets/wooden-bg.jpg'), linear-gradient(270deg, rgba(0,0,0,0.9), rgba(0,0,0,0.3));
+    background-blend-mode: multiply;
     background-size: cover;
 }
 
